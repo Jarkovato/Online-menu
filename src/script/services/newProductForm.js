@@ -1,6 +1,6 @@
 import Product from "../classes/product";
 
-const form = document.getElementById("newProductForm");
+const $form = document.getElementById("newProductForm");
 
 const submitForm = (event) => {
   event.preventDefault();
@@ -29,6 +29,6 @@ const clearForm = () => {
 
 }
 
-form.addEventListener("submit", submitForm);
+$form.addEventListener("submit", submitForm);
 
 

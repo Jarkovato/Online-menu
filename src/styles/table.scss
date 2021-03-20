@@ -1,0 +1,38 @@
+.table {
+  width: 100%;
+  background-color: $bg;
+  border-collapse: collapse;
+  &__header {
+    background-color: $blue-darken;
+  }
+  &__title {
+    color: $white;
+    padding: 1rem;
+    border-bottom: 1px solid lightgrey;
+    &:not(:first-child) {
+      border-left: 1px solid lightgrey;
+    }
+  }
+  &__row {
+    border-bottom: 1px solid lightgrey;
+  }
+  &__body {
+    text-align: center;
+  }
+  &__data {
+    padding: 1rem;
+    &:not(:first-child) {
+      border-left: 2px solid lightgray;
+    }
+  }
+}
+
+.table-wrapper {
+  width: 100%;
+  display: table;
+  margin-top: 1rem;
+  box-shadow: $shadow;
+  @include border();
+  border-right: none;
+  overflow: hidden;
+}

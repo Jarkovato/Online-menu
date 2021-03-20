@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Онлайн меню</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#settings">Редактировать меню</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#staff">Управление персоналом</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#review">Отзывы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="settings" id="settings">
+    <div class="container">
+      <h1 class="settings__title">Редактировать онлайн меню</h1>
+      <div class="new-product">
+        <form class="new-product__form" id="newProductForm" action="#">
+          <h2 class="new-product__title">Добавить новое блюдо или напиток</h2>
+          <div class="new-product__wrapper">
+            <label class="new-product__label" for="newProductCategory">Выберите категорию:</label>
+            <select class="new-product__select" name="newProductCategory" id="newProductCategory">
+              <option class="new-product__option" value="Не Выбрано">
+                Не выбрано
+              </option>
+              <option class="new-product__option" value="Супы">
+                Супы
+              </option>
+              <option class="new-product__option" value="Основные блюда">
+                Основные блюда
+              </option>
+              <option class="new-product__option" value="Салаты">Салаты</option>
+              <option class="new-product__option" value="Закуски">
+                Закуски
+              </option>
+              <option class="new-product__option" value="Напитки">
+                Напитки
+              </option>
+            </select>
+          </div>
+          <div class="new-product__wrapper">
+            <label class="new-product__label" for="productName">Название:</label>
+            <input class="new-product__input" type="text" name="productName" id="newProductName" autocomplete="off" />
+          </div>
+          <div class="new-product__wrapper">
+            <label class="new-product__label" for="productDesc">Описание:</label>
+            <input class="new-product__input" type="text" name="productDesc" id="newProductDesc" autocomplete="off" />
+          </div>
+          <div class="new-product__wrapper">
+            <label class="new-product__label" for="productWeight">Вес:</label>
+            <input class="new-product__input" type="text" name="productWeight" id="newProductWeight"
+              autocomplete="off" />
+          </div>
+          <div class="new-product__wrapper">
+            <label class="new-product__label" for="productVolume">Объем:</label>
+            <input class="new-product__input" type="text" name="productVolume" id="newProductVolume"
+              autocomplete="off" />
+          </div>
+          <button class="new-product__btn btn" type="submit" id="idProductAddBtn">Добавить</button>
+        </form>
+      </div>
+      <div class="table-wrapper">
+        <table class="settings-table table">
+          <thead class="table__header">
+            <tr class="table__row">
+            <th class="table__title"> Категория</th>
+            <th class="table__title"> Название</th>
+            <th class="table__title"> Описание</th>
+            <th class="table__title"> Вес</th>
+            <th class="table__title"> Объем</th>
+          </tr>
+          </thead>
+          <tbody class="table__body" id="newProductTableBody">
+            <tr class="table__row">
+              <td class="table__data">Салат</td>
+              <td class="table__data">Салат цезарь</td>
+              <td class="table__data">Вкуснейший салат цезарь</td>
+              <td class="table__data">200г</td>
+              <td class="table__data"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

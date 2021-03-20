@@ -1,0 +1,10 @@
+@mixin text ($font-color, $font-size, $font-weight) {
+  color: $font-color;
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+
+@mixin border () {
+  border: $border;
+  border-radius: 8px;
+}

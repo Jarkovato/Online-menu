@@ -1,0 +1,60 @@
+.settings {
+  background-color: $bg;
+  min-height: 100vh;
+  &__title {
+    padding-top: 1rem;
+    text-align: center;
+    margin: 0;
+    @include text($text, 1.5rem, 700);
+  }
+}
+
+.new-product {
+  padding-top: 1rem;
+  &__title {
+    @include text($text, 1.1rem, 700);
+    text-align: center;
+    padding-bottom: 0.5rem;
+  }
+  &__form {
+    padding: 1rem;
+    margin: 0px auto;
+    @include border();
+    border-right: none;
+
+    box-shadow: $shadow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    padding-top: 0.5rem;
+  }
+  &__label {
+    min-width: 20%;
+    padding-right: 0.5rem;
+    @include text($text, 1rem, 500);
+    text-align: right;
+  }
+  &__input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid $grey-darken;
+    border-radius: 4px;
+    @include text($text, 1rem, 400);
+  }
+  &__select {
+    width: 90%;
+    padding: 0.5rem;
+    border: 1px solid $grey-darken;
+    border-radius: 4px;
+    @include text($text, 1rem, 400);
+  }
+  &__btn {
+    display: block;
+    margin: 1rem auto;
+    margin-bottom: 0;
+  }
+}
